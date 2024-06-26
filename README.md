@@ -1,4 +1,4 @@
-<h1 align= center>AiTagBot - TeLeTiPs</h1>
+<h1 align= center>AiTagBot</h1>
 <h3 align = center>Powerful Telegram bot to get everyone's attention by mentioning all members in the chat.
 <br>AiTag bot has some additional cool features and also it can work in channels.
     
