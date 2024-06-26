@@ -1,8 +1,8 @@
 <h1 align= center>AiTagBot</h1>
 <h3 align = center>Çatda bütün üzvləri qeyd etməklə hər kəsin diqqətini cəlb edən güclü Telegram botu.
- AiTag botunda bəzi əlavə əla xüsusiyyətlər var və o, həmçinin kanallarda işləyə bilər. 
+ AiTag botunda bəzi əlavə əla xüsusiyyətlər var və o, həmçinin kanallarda işləyə bilər. </h3>
     
-<br>💥 Qruplarda Slamsız işləyir. hər mesajı 10 saniyəden bir atır.../h3>
+<br>💥 Qruplarda Slamsız işləyir. hər mesajı 10 saniyəden bir atır...</br>
 
 
 <h1 align="center">
@@ -28,22 +28,37 @@
 /aitag <səbəb>    
 ```
     
-### 👻 /remove , /sil
+### 👻 remove , sil
 
 - Bütün silinmiş hesabları söhbətdən atmaq üçün.
 
-### 👮🏻 /admins , /staff
+```
+/sil   
+```
+
+### 👮🏻 admins , staff
 
 - Söhbətin tam qeyri-anonim admin siyahısını əldə edərkən bütün adminləri qeyd etmək.
 
-### 👾 /bots 
+```
+/staff
+```
+
+### 👾 bots 
 
 - Söhbətin tam bot siyahısını əldə etmək üçün.
 
-### 🛑 /stop , /cancel
+```
+/bots 
+```
+
+### 🛑 stop , dayan
 
 - Çatda davam edən prosesi dayandırmaq üçün.
- 
+
+ ```
+/stop   
+```
  
 ## ☁️ Yerləşdirmə üsulları
 
