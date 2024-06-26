@@ -1,14 +1,11 @@
-# Exported from Render on 2024-06-26T09:15:04Z
 services:
 - type: web
-  name: aichatbot
+  name: aitagbot
   runtime: docker
-  repo: https://github.com/rzayevaga/aichatbot
+  repo: https://github.com/rzayevaga/aitagbot
   plan: free
   envVars:
-  - key: STRING_SESSION
-    sync: false
-  - key: MONGO_URL
+  - key: BOT-TOKEN
     sync: false
   - key: API_ID
     sync: false
