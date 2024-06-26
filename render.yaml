@@ -1,0 +1,20 @@
+# Exported from Render on 2024-06-26T09:15:04Z
+services:
+- type: web
+  name: aichatbot
+  runtime: docker
+  repo: https://github.com/rzayevaga/aichatbot
+  plan: free
+  envVars:
+  - key: STRING_SESSION
+    sync: false
+  - key: MONGO_URL
+    sync: false
+  - key: API_ID
+    sync: false
+  - key: API_HASH
+    sync: false
+  region: frankfurt
+  dockerContext: .
+  dockerfilePath: ./Dockerfile
+version: "1"
