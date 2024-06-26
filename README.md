@@ -1,8 +1,8 @@
 <h1 align= center>AiTagBot</h1>
-<h3 align = center>Powerful Telegram bot to get everyone's attention by mentioning all members in the chat.
-<br>AiTag bot has some additional cool features and also it can work in channels.
+<h3 align = center>Çatda bütün üzvləri qeyd etməklə hər kəsin diqqətini cəlb edən güclü Telegram botu.
+ AiTag botunda bəzi əlavə əla xüsusiyyətlər var və o, həmçinin kanallarda işləyə bilər. 
     
-<br>💥 Easy    ⚡️ Fast    ✨ Self Deployable</h3>
+<br>💥 Qruplarda Slamsız işləyir. hər mesajı 10 saniyəden bir atır.../h3>
 
 
 <h1 align="center">
@@ -14,54 +14,39 @@
     
 ## ⚒ Config Vars
 
-1. `API_ID` : Telegram API_ID, get it from my.telegram.org/apps
-2. `API_HASH` : Telegram API_ID, get it from my.telegram.org/apps
-3. `BOT_TOKEN` : A Valid Telegram Bot Token, get it from @Botfather
+1. `API_ID` : Telegram API_ID, onu my.telegram.org/apps saytından əldə edin
+2. `API_HASH` : Telegram API_HASH, onu my.telegram.org/apps saytından əldə edin
+3. `BOT_TOKEN` : Etibarlı Telegram Bot Tokeni, onu @Botfather-dən əldə edin
 
 
-## 📄 Commands
+## 📄 Əmrlər
 
 ### 🛎 aitag , all
 
-- To get everyone's attention by mentioning all members in the chat.
 
 ```
-/aitag <input>    
+/aitag <səbəb>    
 ```
     
-### 👻 remove , clean
+### 👻 /remove , /sil
 
-- To remove all deleted accounts from the chat.
+- Bütün silinmiş hesabları söhbətdən atmaq üçün.
 
-### 👮🏻 admins , staff
+### 👮🏻 /admins , /staff
 
-- To mention all admins while getting the full non-anonymous admin list of the chat.
+- Söhbətin tam qeyri-anonim admin siyahısını əldə edərkən bütün adminləri qeyd etmək.
 
-### 👾 bots 
+### 👾 /bots 
 
-- To get the full bot list of the chat.
+- Söhbətin tam bot siyahısını əldə etmək üçün.
 
-### 🛑 stop , cancel
+### 🛑 /stop , /cancel
 
-- To stop an on going process in the chat.
+- Çatda davam edən prosesi dayandırmaq üçün.
  
  
-## ☁️ Deployment Methods
+## ☁️ Yerləşdirmə üsulları
 
 ### Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rzayevaga/aitagbot)
-    
-    
-## ⭐️ Credits
-  
-- [TeLe TiPs](https://github.com/teletips)
-- [Thakshaka](https://t.me/thakshakar)
-- [Pyrogram](https://github.com/pyrogram/pyrogram)
-
-
-## 🚨 Warning
-
-- Changing the code is NOT ALLOWED!  
-- Everyone is permitted to copy this work, but you MUST include the following in your README document.
-
