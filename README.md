@@ -2,7 +2,7 @@
 <h3 align = center>Çatda bütün üzvləri qeyd etməklə hər kəsin diqqətini cəlb edən güclü Telegram botu.
  AiTag botunda bəzi əlavə əla xüsusiyyətlər var və o, həmçinin kanallarda işləyə bilər. </h3>
     
-<br>💥 Qruplarda Slamsız işləyir. hər mesajı 10 saniyəden bir atır...</br>
+<br>💥 Qruplarda Spamsız işləyir. hər mesajı 10 saniyəden bir atır...</br>
 
 
 <h1 align="center">
