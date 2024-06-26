@@ -223,7 +223,7 @@ async def bots(client, message):
       bot = botList.pop(0)
       text3 += f"└ @{bot.username}\n\n"
       text3 += f"✅ | **Botların ümumi sayı**: {lenBotList}"  
-      await teletips.send_message(message.chat.id, text3)
+      await rzayev.send_message(message.chat.id, text3)
   except FloodWait as e:
     await asyncio.sleep(e.value)
 
@@ -300,7 +300,7 @@ async def auto_welcome(bot: Client, msg: Message):
     welcome_text = f"**Salam, {mention}, {group_name}-a Xoş gəldin!\n\nSəni aramızda görməyimiza Şaıqm.\n\nQrupa Gəlmisənsə Qrup Qaydalarına əməl et!\n\nSənin ID-in:** `{id}`"
     WELCOME_TEXT = os.environ.get("WELCOME_TEXT", welcome_text)
     print("Xoş gəlmisiniz Mesajı Aktivləşdirin")
-    BUTTON = bool(os.environ.get("WELCOME_BUTTON"))
+    BUTTON = name_button
     if not BUTTON:
        await msg.reply_text(text=WELCOME_TEXT.format(
            first = msg.from_user.first_name,
