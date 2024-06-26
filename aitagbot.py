@@ -208,7 +208,7 @@ async def admins(client, message):
   except FloodWait as e:
     await asyncio.sleep(e.value)       
 
-@rzayev.on_message(filters.command("bots", "bot", "botlar"))
+@rzayev.on_message(filters.command(["bots", "bot", "botlar"]))
 async def bots(client, message):  
   try:    
     botList = []
@@ -242,7 +242,7 @@ Mənim bəzi əlavə əla xüsusiyyətlərim var və həmçinin kanallarda işl�
   await rzayev.send_message(message.chat.id, text, disable_web_page_preview=True)
 
 
-@rzayev.on_message(filters.command("help"))
+@rzayev.on_message(filters.command(["help"]))
 async def help(client, message):
   text = '''
 Ooo Gözəl, Əmrlər Aşağıdadır Baxın.
