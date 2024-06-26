@@ -260,7 +260,7 @@ Məndən necə istifadə edəcəyinizlə bağlı hər hansı bir sualınız vars
   await rzayev.send_message(message.chat.id, text, disable_web_page_preview=True)
 
 
-@rzayəv.on_message(filters.command("info") & filters.private)
+@rzayev.on_message(filters.command("info") & filters.private)
 async def uinfo(client, message):
     await message.reply(
         f"""
