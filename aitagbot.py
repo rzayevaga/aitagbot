@@ -223,7 +223,7 @@ async def bots(client, message):
       bot = botList.pop(0)
       text3 += f"└ @{bot.username}\n\n"
       text3 += f"✅ | **Botların ümumi sayı**: {lenBotList}"  
-      await teletips.send_message(message.chat.id, text3)
+      await rzayev.send_message(message.chat.id, text3)
   except FloodWait as e:
     await asyncio.sleep(e.value)
 
