@@ -11,9 +11,9 @@ from pyrogram.errors import FloodWait
 
 rzayev=Client(
     "AiTagBot",
-    api_id = int(os.environ["API_ID"]),
-    api_hash = os.environ["API_HASH"],
-    bot_token = os.environ["BOT_TOKEN"]
+    api_id = "18052289",
+    api_hash = "552525f45a3066fee54ca7852235c19c",
+    bot_token = "7107189608:AAFtORYlWvvvZKC7D2BNubCd3dngrbJFOC8"
 )
 
 chatQueue = []
