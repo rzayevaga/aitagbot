@@ -59,6 +59,30 @@
  ```
 /stop   
 ```
+
+### 🔎 id
+
+- İstifadəçininin ID'sini göstərmək üçün.
+
+ ```
+/id
+```
+
+### ⚡ ping
+
+- Bot'in ms'ni göstərmək üçün.
+
+ ```
+/ping
+```
+
+### 🔮 alive 
+
+- Bot'un canlı olub olmadığını yoxlamaq üçün.
+
+ ```
+/alive
+```
  
 ## ☁️ Yerləşdirmə üsulları
 
@@ -66,9 +90,11 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rzayevaga/aitagbot)
 
-### Local Deploy
+## Local Deploy
 
-*Repo Clone:*
+
+
+*Repo Clone, install:*
    
      git clone https://github.com/rzayevaga/aitagbot
 
@@ -82,7 +108,12 @@
      pip3 install -U -r requirements.txt
  
 
-*Bot start*
+*Terminal Online Local:*
+
+     apt install tmux && tmux
+
+     
+*Bot start:*
 
      bash start
-
+ 
