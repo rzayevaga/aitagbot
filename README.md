@@ -86,7 +86,7 @@
  
 ## ☁️ Yerləşdirmə üsulları
 
-### Heroku
+### Heroku ~ Ban Serveri / With Ban ~  Tövsiyyə olunmur.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rzayevaga/aitagbot)
 
