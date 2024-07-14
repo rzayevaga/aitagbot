@@ -99,13 +99,18 @@
      git clone https://github.com/rzayevaga/aitagbot
 
 
-*Repo Login:*
+*Repo File Login:*
 
      cd aitagbot.py
 
 *Requirements İnstall:*
 
      pip3 install -U -r requirements.txt
+
+
+*Config Edit:*
+
+    .env
  
 
 *Terminal Online Local:*
