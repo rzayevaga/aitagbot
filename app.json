@@ -1,0 +1,38 @@
+{
+    "name": "aiTag - bot",
+    "description": "Powerful Telegram bot to get everyone's attention by mentioning all members in the chat. AiTag bot has some additional cool features and also it can work in channels. It's easy, fast and self deployable.",
+    "repository": "https://github.com/rzayevaga/aitagbot",
+    "logo": "https://www.rzayev.iblogger.org/data/files/aitagbot.png",
+    "keywords": [
+        "Ai-Tag bot",
+        "aiteknoloji",
+        "python",
+        "Telegram",
+        "Pyrogram"
+    ],
+    "env": {
+        "API_ID": {
+            "description": "Get from my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get from my.telegram.org/apps",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Get from Telegram's @BotFather",
+            "required": true
+        }
+    },
+    "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
