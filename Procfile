@@ -1,1 +1,1 @@
-worker: python3 aitagbot.py
+worker: bash start
