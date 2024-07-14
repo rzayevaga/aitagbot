@@ -65,3 +65,24 @@
 ### Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rzayevaga/aitagbot)
+
+### Local Deploy
+
+*Repo Clone:*
+   
+     git clone https://github.com/rzayevaga/aitagbot
+
+
+*Repo Login:*
+
+     cd aitagbot.py
+
+*Requirements İnstall:*
+
+     pip3 install -U -r requirements.txt
+ 
+
+*Bot start*
+
+     bash start
+
