@@ -110,7 +110,7 @@
 
 *Config Edit:*
 
-    .env
+     nano .env
  
 
 *Terminal Online Local:*
