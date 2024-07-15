@@ -39,8 +39,8 @@ async def everyone(client, message):
     except:
       has_permissions = message.sender_chat  
     if has_permissions:
-      if len(chatQueue) > 5:
-        await message.reply("⛔️ | Hazırda maksimum 5 söhbətim üzərində işləyirəm.  Lütfən, tezliklə yenidən cəhd edin.")
+      if len(chatQueue) > 10:
+        await message.reply("⛔️ | Hazırda maksimum 10 söhbətim üzərində işləyirəm.  Lütfən, tezliklə yenidən cəhd edin.")
       else:  
         if message.chat.id in chatQueue:
           await message.reply("🚫 | Bu çatda artıq davam edən proses var.  Yenisini başlamaq üçün zəhmət olmasa /stop əmrini işlədin.")
@@ -109,8 +109,8 @@ async def remove(client, message):
       if bot.status == ChatMemberStatus.MEMBER:
         await message.reply("🕹 Silinmiş hesabları qrupdan atmaq üçün mənə admin icazələri lazımdır.")  
       else:  
-        if len(chatQueue) > 5 :
-          await message.reply("⛔️ | Hazırda maksimum 5 söhbətim üzərində işləyirəm.  Lütfən, tezliklə yenidən cəhd edin.")
+        if len(chatQueue) > 10 :
+          await message.reply("⛔️ | Hazırda maksimum 10 söhbətim üzərində işləyirəm.  Lütfən, tezliklə yenidən cəhd edin.")
         else:  
           if message.chat.id in chatQueue:
             await message.reply("🚫 | Bu çatda artıq davam edən proses var.  Yenisini başlamaq üçün zəhmət olmasa ilk olaraq /cancel əmrindənə istifadə et.")
@@ -241,7 +241,7 @@ async def bots(client, message):
 async def start(client, message):
   text = f'''
 Salam {message.from_user.mention},
-Mənim adım **Marvel**-dır.  Qrupunuzdakı bütün üzvləri spamsız tağ etməklə hər kəsin diqqətini çəkməyə bacarıram.
+Mənim adım **AiTag**-dır.  Qrupunuzdakı bütün üzvləri spamsız tağ etməklə hər kəsin diqqətini çəkməyə bacarıram.
 
 Mənim bəzi əlavə əla xüsusiyyətlərim var və həmçinin kanallardada işləyə bilərəm. 
 
@@ -349,7 +349,7 @@ async def auto_welcome(bot: Client, msg: Message):
 @rzayev.on_message(filters.left_chat_member)
 async def goodbye(bot,message):
 	chatid= message.chat.id
-	n=await bot.send_message(text=f"Getməyinə üzüldüm,  {message.from_user.mention}, iyi günlər 😔",chat_id=chatid)
+	n=await rzayev.send_message(text=f"Getməyinə üzüldüm,  {message.from_user.mention}, iyi günlər 😔",chat_id=chatid)
 
 @rzayev.on_message(filters.command(["ping"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]))
 async def ping_pong(client, message):
@@ -394,6 +394,11 @@ async def get_uptime(client, message):
 
 
 
+### ~ /// private ### 
+# OWNER command 
+
+
+## command / Tools / banall ~ Editing....
 @rzayev.on_message(
 filters.command("banall", "") 
 & filters.group
