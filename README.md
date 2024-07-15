@@ -101,7 +101,7 @@
 
 *Repo File Login:*
 
-     cd aitagbot.py
+     cd aitagbot
 
 *Requirements İnstall:*
 
