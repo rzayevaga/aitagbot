@@ -6,7 +6,7 @@
 
 
 <h1 align="center">
-    <img src="aitagbot.png" alt="AiTag Bot logo" width="200">
+    <img src="assets/aitagbot_remove_bg.png" alt="AiTag Bot logo" width="200">
     <br>
        Ai-Tag Bot
 </h1>
