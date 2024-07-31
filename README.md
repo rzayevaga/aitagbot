@@ -108,7 +108,7 @@
      pip3 install -U -r requirements.txt
 
 
-*Config Edit:*
+*Config Edit:* ctrl + x and y and ctrl m 
 
      nano config.py
  
@@ -127,7 +127,8 @@
 ## Terminal fast deploy
 
 
- • install | Konfigləri yerləşdir
+ • install | Konfigləri yerləşdir 
+ • ctrl + x and y and ctrl m 
    
     git clone https://github.com/rzayevaga/aitagbot && cd aitagbot && nano config.py 
 
