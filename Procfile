@@ -1,1 +1,1 @@
-worker: bash start
+rzayev: bash start
