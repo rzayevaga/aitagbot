@@ -12,7 +12,7 @@
 </h1>
 
     
-## ⚒ Config Vars
+## ⚒ Konfiqurasiya Vars
 
 1. `API_ID` : Telegram API_ID, onu my.telegram.org/apps saytından əldə edin
 2. `API_HASH` : Telegram API_HASH, onu my.telegram.org/apps saytından əldə edin
@@ -122,3 +122,20 @@
 
      bash start
  
+
+
+## Terminal fast deploy
+
+
+ • install | Konfigləri yerləşdir
+   
+    git clone https://github.com/rzayevaga/aitagbot && cd aitagbot && nano .env 
+
+  
+ • Run command
+                    
+                    bash setup.sh
+
+
+
+⚕ Bot is online... 😛
