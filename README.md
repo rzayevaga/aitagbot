@@ -110,7 +110,7 @@
 
 *Config Edit:*
 
-     nano .env
+     nano config.py
  
 
 *Terminal Online Local:*
@@ -129,7 +129,7 @@
 
  • install | Konfigləri yerləşdir
    
-    git clone https://github.com/rzayevaga/aitagbot && cd aitagbot && nano .env 
+    git clone https://github.com/rzayevaga/aitagbot && cd aitagbot && nano config.py 
 
   
  • Run command
