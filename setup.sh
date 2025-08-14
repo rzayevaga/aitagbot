@@ -2,7 +2,6 @@
 
 setup_improved.sh
 
-Təkmilləşdirilmiş setup script — rənglər, gecikmələr və animasiyalar əlavə edildi.
 
 İstifadə: chmod +x setup_improved.sh && ./setup_improved.sh
 
