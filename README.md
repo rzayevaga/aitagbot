@@ -90,53 +90,13 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rzayevaga/aitagbot)
 
-## Local Deploy
 
 
 
-*Repo Clone, install:*
-   
-     git clone https://github.com/rzayevaga/aitagbot
+## Termux fast deploy
 
 
-*Repo File Login:*
-
-     cd aitagbot
-
-*Requirements İnstall:*
-
-     pip3 install -U -r requirements.txt
-
-
-*Config Edit:* ctrl + x and y and ctrl m 
-
-     nano config.py
- 
-
-*Terminal Online Local:*
-
-     apt install tmux && tmux
-
-     
-*Bot start:*
-
-     bash start
- 
-
-
-## Terminal fast deploy
-
-
- • install | Konfigləri yerləşdir 
- • ctrl + x and y and ctrl m 
-   
-    git clone https://github.com/rzayevaga/aitagbot && cd aitagbot && nano config.py 
-
-  
- • Run command
-                    
-                    bash setup.sh
-
+    git clone https://github.com/rzayevaga/aitagbot && cd aitagbot && bash setup.sh
 
 
 ⚕ Bot is online... 😛
