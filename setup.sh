@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# setup_improved.sh
-# Təkmilləşdirilmiş setup script — rənglər, gecikmələr və animasiyalar əlavə edildi.
-# İstifadə: chmod +x setup_improved.sh && ./setup_improved.sh
+# İstifadə: chmod +x setup.sh && ./setup.sh
 
 # --- Rənglər ---
 RED='\033[0;31m'
@@ -70,20 +68,42 @@ BANNER
 sleep $STEP_DELAY
 cecho "$GREEN" "ㅤㅤ📚 Kitabxanaların yüklənməsi..."
 
-if command -v pip3 >/dev/null 2>&1; then
-  if [ -f requirements.txt ]; then
-    cecho "$BLUE" "    pip3 install -r requirements.txt başladı (səssiz mod)..."
-    pip3 install -r requirements.txt --quiet &
-    PIP_PID=$!
-    spinner $PIP_PID
-    wait $PIP_PID || { cecho "$RED" "pip quraşdırması uğursuz oldu."; exit 1; }
-    cecho "$GREEN" "     ☑️ Uğurla yükləndi."
+# --- Python3 və pip3 yoxlaması və quraşdırılması ---
+install_python_pip() {
+  cecho "$YELLOW" "Python3 və/və ya pip3 tapılmadı — quraşdırma başlayır..."
+  
+  if command -v apt >/dev/null 2>&1; then
+    sudo apt update -y
+    sudo apt install -y python3 python3-pip
+  elif command -v pkg >/dev/null 2>&1; then
+    pkg update -y
+    pkg install -y python python-pip
   else
-    cecho "$YELLOW" "    requirements.txt tapılmadı — pip quraşdırılmadı."
+    cecho "$RED" "❌ Paket meneceri tapılmadı (apt/pkg). Manual quraşdırın."
+    exit 1
   fi
+}
+
+if ! command -v python3 >/dev/null 2>&1; then
+  cecho "$RED" "python3 tapılmadı."
+  install_python_pip
+fi
+
+if ! command -v pip3 >/dev/null 2>&1; then
+  cecho "$RED" "pip3 tapılmadı."
+  install_python_pip
+fi
+
+# --- requirements.txt yoxlanması və quraşdırılması ---
+if [ -f requirements.txt ]; then
+  cecho "$BLUE" "    pip3 install -r requirements.txt başladı (səssiz mod)..."
+  pip3 install -r requirements.txt --quiet &
+  PIP_PID=$!
+  spinner $PIP_PID
+  wait $PIP_PID || { cecho "$RED" "pip quraşdırması uğursuz oldu."; exit 1; }
+  cecho "$GREEN" "     ☑️ Uğurla yükləndi."
 else
-  cecho "$RED" "pip3 sisteminizdə tapılmadı. Zəhmət olmasa pip / python3 quraşdırın."
-  exit 1
+  cecho "$YELLOW" "requirements.txt tapılmadı — pip quraşdırılmadı."
 fi
 
 sleep $STEP_DELAY
@@ -135,14 +155,14 @@ cat > "$CONFIG_FILE" <<EOF
 from os import getenv
 API_ID = int(getenv("API_ID", "$API_ID")) # get my.telegram.org/apps
 API_HASH = getenv("API_HASH", "$API_HASH") # get my.telegram.org/apps
-BOT_TOKEN = getenv("BOT_TOKEN", "$BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "$BOT_TOKEN") # Get from @botfather on telegram
 EOF
 
 cecho "$GREEN" "✅ Config faylı uğurla yaradıldı: $CONFIG_FILE"
 
 # Start script seçimi
 if [ -f ./start ]; then
-  cecho "$CYAN" "Start faylı tapıldı — işə salmaq istəsiniz? (y/N)"
+  cecho "$CYAN" "Start faylı tapıldı — işə salmaq üçün klaviaturada y toxunun. (y/N)"
   read -r -n 1 -s answer || true
   printf "\n"
   if [[ "$answer" =~ [Yy] ]]; then
